@@ -1,0 +1,251 @@
+/* Author: Wolfgang Meyer
+   Date: September 23, 2024
+   File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+  /* Style rule for body and images */
+  body {
+    background-color: #d0e1d0; /* Changed background color */
+    color: #444444; /* Changed text color */
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Style rules for mobile viewport */
+  
+  /* Tablet Viewport: Show mobile class, hide tablet-desktop class */
+  .mobile {
+    display: block;
+  }
+  
+  .tablet-desktop {
+    display: none;
+  }
+  
+  /* Style rules for header content */
+  header {
+    text-align: center;
+    color: #2f4f2f; /* Changed header text color */
+    background-color: #a0c4a0; /* Changed header background color */
+  }
+  
+  header h1 {
+    font-family: 'Coustard', serif;
+    padding: 2%;
+  }
+  
+  header h3 {
+    font-size: 1em;
+    font-style: italic;
+    padding: 1.5%;
+    font-family: Georgia, Times, serif;
+  }
+  
+  .center {
+    margin: 0 auto;
+  }
+  
+  /* Style rules for navigation area */
+  nav {
+    background-color: #0b3b0b; /* Changed navigation background color */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  nav li {
+    display: block;
+    font-size: 1.5em;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+    border-top: 0.5px solid #98b497;
+  }
+  
+  nav li a {
+    display: block;
+    color: #f5f5f5; /* Changed navigation link text color */
+    padding: 0.5em 2em;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    color: #0b3b0b; /* Changed hover text color */
+    background-color: #e2eae2;
+  }
+  
+  /* Style rules for main content */
+  main {
+    padding: 2%;
+  }
+  
+  main p {
+    font-size: 1.25em;
+  }
+  
+  .link {
+    color: #2f512f;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.25em;
+  }
+  
+  .map {
+    border: 4px solid #132913;
+    width: 95%;
+    height: 50%;
+  }
+  
+  #contact {
+    text-align: center;
+  }
+  
+  .tel-link {
+    background-color: #132913;
+    padding: 2%;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 115%;
+  }
+  
+  .tel-link a {
+    color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .round {
+    border-radius: 15px;
+  }
+  
+  main ul {
+    margin-left: 40%;
+  }
+  
+  /* Style rules for footer content */
+  footer {
+    text-align: center;
+    font-size: 0.75em;
+    background-color: #0b3b0b; /* Changed footer background color */
+    color: #f5f5f5; /* Changed footer text color */
+    padding: 1% 0;
+  }
+  
+  footer a {
+    color: #0a460a;
+    text-decoration: none;
+  }
+  
+  /* Media Query for Tablet Viewport */
+  @media screen and (min-width: 600px), print {
+  
+    /* Tablet Viewport: Show tab-desk class, hide tel-link class */
+    .tablet-desktop {
+        display: block;
+    }
+  
+    .tel-link {
+        display: none;
+    }
+    
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em;
+    }
+    
+    nav li a {
+        padding: 0.85em;
+    }
+    
+    /* Tablet Viewport: Style rule for main content */
+    .map {
+        width: 800px;
+        height: 800px;
+    }
+    
+  }
+  
+  /* Media Query for Desktop Viewport */
+  @media screen and (min-width: 900px), print {
+    
+    /* Desktop Viewport: Style rules for nav area */
+    nav li {
+        font-size: 1.5em;
+    }
+    
+    nav li a {
+        padding: 0.5em 1.5em;
+    }
+    
+    nav li a:hover {
+        color: #132913;
+        background-color: #e2eae2;
+    }
+    
+  }
+  
+  /* calculator.css */
+  
+  /* Style the form */
+  #tipCalculator {
+      max-width: 400px; /* Limit the width of the form */
+      margin: auto; /* Center the form on the page */
+      padding: 20px; /* Add some padding */
+      border: 2px solid #4CAF50; /* Green border */
+      border-radius: 10px; /* Rounded corners */
+      background-color: #195fc1; /* Blue background */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Style the labels */
+  label {
+      display: block; /* Stack labels vertically */
+      margin-bottom: 5px; /* Space between labels and inputs */
+      font-weight: bold; /* Make labels bold */
+  }
+  
+  /* Style the input fields and dropdown */
+  input[type="number"],
+  select {
+      width: 100%; /* Full width */
+      padding: 10px; /* Padding for inputs */
+      margin-bottom: 15px; /* Space below inputs */
+      border: 1px solid #ccc; /* Light gray border */
+      border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Style the button */
+  .button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px); 
+  }
+  
