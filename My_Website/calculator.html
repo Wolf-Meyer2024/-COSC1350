@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<!--
+	Student Name: Wolfgang Meyer
+	File Name: template.html
+	Date: 9/11/2024
+ -->
+
+<html lang="en">
+	<head>
+		<title>Template</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tip Calculator</title>
+		<link rel="stylesheet" href="CSS_Folder/calculator.css">
+	</head>
+
+	<body>
+
+		<!-- Use the header area for the website name or logo. The header contains static content. -->
+		<header>
+			<h1>Wolfgang Meyer</h1>
+		</header>
+
+		<!-- Use the nav area to add hyperlinks to other pages within the website. It contains static content. -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="contact.html">Contact</a></li>
+                <li><a href="calculator.html">Calculater</a></li>
+			</ul>
+		</nav>
+
+		<!-- Use the main area to add the main content of the webpage -->
+		<main>
+            <h1>Tip Calculater</h1>
+            <form id = "tipCalculater">
+                <label for = "billAmount"> Bill Amount ($): </label>
+                <input type = "number" id = "billAmount" name = "billAmount" required>
+                <label for = "serviceQuality"> Service Quality</label>
+                <select id = "serviceQuality" name = "serviceQuality" required>
+                    <option value = "25">Excellent (25%)</option>
+                    <option value = "20">Good (20%)</option>
+                    <option value = "15">Fair (15%)</option>
+                    <option value = "10">Poor (10%)</option>
+                </select>
+                <button type = "button" class = "button" onclick="calculateTip()"> Calculate Tip</button>
+
+
+            </form>
+
+		</main>
+
+		<!-- Use the footer area to add static footer content, such as email and copyright info. -->
+		<footer>
+			<p>&copy; Copyright 2024. All Rights Reserved.</p>
+		</footer>
+
+	</body>
+</html>
