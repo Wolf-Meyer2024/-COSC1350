@@ -4,8 +4,8 @@
       Chapter case   
 
       Word Cloud Generator
-      Author: 
-      Date:       
+      Author: Wolfgang Meyer
+      Date: 10-29-24       
 
       Filename:       js07.js
  */
