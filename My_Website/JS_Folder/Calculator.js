@@ -15,3 +15,4 @@ function calculateTip() {
     // Display the result on the webpage
     document.getElementById('result').innerText = `Tip Amount: $${tipAmount.toFixed(2)}`;
 }
+
