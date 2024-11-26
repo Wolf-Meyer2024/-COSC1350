@@ -3,22 +3,44 @@
 <!--
 	Student Name: Wolfgang Meyer
 	File Name: breakout.html
-	Date:
+	Date: 11-25-24
  -->
-
-
+<!DOCTYPE html>
 <html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breakout Game</title>
+  <link href="breakout.css" rel="stylesheet" type="text/css">
+  <style>
+    /* Add some basic styling for the canvas */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
 
-  <head>
-    <meta charset="utf-8" />
-    <h1>Breakout Game</h1>
-    <title>Guessing Game</title>
-    <link href="breakout.css" rel="stylesheet" type="text/css">
-  </head>
+    canvas {
+      border: 1px solid #000;
+      background-color: #fff;
+    }
 
-  <body>
-    <canvas id="myCanvas" width="600" height="400"></canvas>
-    <script src="breakout.js"></script>
-  </body>
+    h1 {
+      position: absolute;
+      top: 20px;
+      color: #333;
+      font-size: 24px;
+      text-align: center;
+    }
+  </style>
+</head>
 
+<body>
+  <h1>Breakout Game</h1>
+  <canvas id="myCanvas" width="600" height="400"></canvas>
+  <script src="breakout.js"></script>
+</body>
 </html>
