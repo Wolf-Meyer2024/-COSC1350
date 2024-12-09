@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 
 <!--
 	Student Name: Wolfgang Meyer
@@ -6,41 +6,17 @@
 	Date: 11-25-24
  -->
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Breakout Game</title>
-  <link href="breakout.css" rel="stylesheet" type="text/css">
-  <style>
-    /* Add some basic styling for the canvas */
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f0f0f0;
-    }
-
-    canvas {
-      border: 1px solid #000;
-      background-color: #fff;
-    }
-
-    h1 {
-      position: absolute;
-      top: 20px;
-      color: #333;
-      font-size: 24px;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakout Game</title>
+    <link rel="stylesheet" href="breakout.css">
 </head>
-
 <body>
-  <h1>Breakout Game</h1>
-  <canvas id="myCanvas" width="600" height="400"></canvas>
-  <script src="breakout.js"></script>
+    <div id="scoreBoard">Score: 0 Lives: 3</div>
+    <canvas id="myCanvas" width="800" height="600"></canvas>
+    <button id="resetBtn">Reset Game</button>
+    <script src="breakout.js"></script>
 </body>
 </html>
